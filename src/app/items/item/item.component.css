@@ -1,0 +1,46 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card {
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 10px 16px;
+    margin: 20px 350px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.336);
+}
+
+.info {
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+a.info {
+    color: white;
+}
+
+a.info span {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.male {
+    background-color: #546e7a;
+}
+
+.female {
+    background-color: #ee6e73;
+}
+
+p {
+    text-align: right;
+}

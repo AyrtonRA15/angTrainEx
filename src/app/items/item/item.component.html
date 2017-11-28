@@ -1,0 +1,26 @@
+<div class="card" [ngClass]="{'male': item.gender === 'Male', 'female': item.gender === 'Female'}">
+  <h1>{{ item.firstName | uppercase }}</h1>
+  <div class="info" appHighlight>
+    {{ item.firstName }} - {{ item.lastName }}
+  </div>
+  <div class="info" appHighlight>
+    {{ item.id }}
+  </div>
+  <div class="info">
+    {{ item.birthday | date }}
+  </div>
+  <a class="info" [href]="item.email | domainOnly">
+    {{ item.email | domainOnly }}
+  </a>
+  <span [ngSwitch]="item.gender">
+    <p *ngSwitchCase="'Male'">
+      MALE
+    </p>
+    <p *ngSwitchCase="'Female'">
+      FEMALE
+    </p>
+    <p *ngSwitchDefault>
+      INTERSEX
+    </p>
+  </span>
+</div>
