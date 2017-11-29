@@ -9,7 +9,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class ItemComponent implements OnInit {
 
   @Input() item: IItem;
-  @Input() index: number;
   @Output() onDelete = new EventEmitter<number>();
 
   constructor() { }
@@ -18,7 +17,7 @@ export class ItemComponent implements OnInit {
   }
 
   deleteItem() {
-    this.onDelete.emit(this.index);
+    this.onDelete.emit();
   }
 
 }
