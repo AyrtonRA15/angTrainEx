@@ -1,5 +1,10 @@
 <div class="card" [ngClass]="{'male': item.gender === 'Male', 'female': item.gender === 'Female'}">
-  <h1>{{ item.firstName | uppercase }}</h1>
+  <div class="close-btn">
+    <img src="../../../assets/close.png" (click)="deleteItem()">
+  </div>
+  <h1>
+    {{ item.firstName | uppercase }}
+  </h1>
   <div class="info" appHighlight>
     {{ item.firstName }} - {{ item.lastName }}
   </div>
