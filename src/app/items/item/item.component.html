@@ -1,6 +1,6 @@
 <div class="card" [ngClass]="{'male': item.gender === 'Male', 'female': item.gender === 'Female'}">
   <div class="close-btn">
-    <img src="../../../assets/close.png" (click)="deleteItem()">
+    <img [src]="closeImgUrl" (click)="deleteItem()">
   </div>
   <h1>
     {{ item.firstName | uppercase }}
